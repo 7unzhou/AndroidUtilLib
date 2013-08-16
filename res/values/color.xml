@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#FF3333</color>
+    <color name="green">#00FF33</color>
+    <color name="default_text">#949597</color>
+    <color name="select_text">#FFF</color>
+
+    <!-- circleview res -->
+    <dimen name="shadow_size">1.5dip</dimen>
+   <!-- circleview res -->
+    <color name="shadow_color">#ff9f9f9f</color>
+
+</resources>
