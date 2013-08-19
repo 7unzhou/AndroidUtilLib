@@ -9,6 +9,7 @@
         android:layout_height="50dp"
         android:background="@color/green"
         android:gravity="center" >
+
         <ImageView
             android:id="@+id/rl_playstatus"
             android:layout_width="wrap_content"
@@ -23,7 +24,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:padding="@dimen/padding_medium"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/iv_avater"
@@ -31,5 +33,12 @@
         android:layout_height="80dp"
         android:layout_alignParentRight="true"
         android:layout_margin="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_avater" >
+    </RelativeLayout>
 
 </RelativeLayout>

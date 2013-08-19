@@ -11,7 +11,9 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -19,11 +21,13 @@ import android.widget.Toast;
 
 import com.zhouzhou.utillib.application.App;
 import com.zhouzhou.utillib.component.DebugInfo;
+import com.zhouzhou.utillib.fragment.CoursesFragment;
 import com.zhouzhou.utillib.view.CircleDrawable;
 
 public class MainActivity extends FragmentActivity {
 	View testBt;
 	View animationView;
+	View contentView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 		DebugInfo.trace();
 		testBt = findViewById(R.id.bt_test);
+
 		testBt.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -40,6 +45,7 @@ public class MainActivity extends FragmentActivity {
 		});
 
 		initView();
+		showFragment();
 
 	}
 
@@ -53,6 +59,7 @@ public class MainActivity extends FragmentActivity {
 		animationView = this.findViewById(R.id.rl_playstatus);
 
 		drawCircleView(imageView);
+
 	}
 
 	/*
@@ -80,6 +87,14 @@ public class MainActivity extends FragmentActivity {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			imageView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 		}
+	}
+
+	private void showFragment() {
+		Fragment contentFragment = new CoursesFragment();
+		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+		ft.replace(R.id.rl_content, contentFragment);
+		// ft.addToBackStack(null);
+		ft.commitAllowingStateLoss();
 	}
 
 }

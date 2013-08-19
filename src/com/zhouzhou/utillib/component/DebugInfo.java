@@ -33,4 +33,8 @@ public class DebugInfo {
 			// Log.i("DebugInfo", traceElement.toString());
 		}
 	}
+	
+	public void unSupportOperation(){
+		throw new UnsupportedOperationException();
+	}
 }
