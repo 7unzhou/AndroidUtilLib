@@ -34,11 +34,11 @@ public class App extends Application {
 		instance = this;
 		isDebugMode = isDebugMode(this);
 		
-		crashHandler = CrashHandler.getInstance();
-		// 注册crashHandler
-		crashHandler.init(getApplicationContext());
-		// 发送报告(可选) 可添加在网络判断的新开线程来完成
-		crashHandler.sendCrashReportsToServer(getApplicationContext());
+//		crashHandler = CrashHandler.getInstance();
+//		// 注册crashHandler
+//		crashHandler.init(getApplicationContext());
+//		// 发送报告(可选) 可添加在网络判断的新开线程来完成
+//		crashHandler.sendCrashReportsToServer(getApplicationContext());
 
 	}
 
