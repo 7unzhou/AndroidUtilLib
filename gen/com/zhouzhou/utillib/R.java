@@ -8,12 +8,25 @@
 package com.zhouzhou.utillib;
 
 public final class R {
+    public static final class array {
+        public static final int stringarray=0x7f060000;
+    }
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int edgeeffect_color=0x7f010000;
     }
     public static final class color {
+        public static final int default_edgeeffect_color=0x7f040005;
         public static final int default_text=0x7f040002;
         public static final int green=0x7f040001;
-        public static final int item_click=0x7f040005;
+        public static final int item_click=0x7f040006;
         public static final int red=0x7f040000;
         public static final int select_text=0x7f040003;
         /**  circleview res 
@@ -34,60 +47,95 @@ public final class R {
         public static final int activity_courses_play=0x7f020002;
         public static final int avater=0x7f020003;
         public static final int background=0x7f020004;
-        public static final int bg_pattern=0x7f020005;
-        public static final int course_default1=0x7f020006;
-        public static final int course_default2=0x7f020007;
-        public static final int course_default3=0x7f020008;
-        public static final int course_default4=0x7f020009;
-        public static final int courses_play_status=0x7f02000a;
-        public static final int gplaypattern=0x7f02000b;
-        public static final int ic_action_search=0x7f02000c;
-        public static final int ic_launcher=0x7f02000d;
-        public static final int img_play_status01=0x7f02000e;
-        public static final int img_play_status02=0x7f02000f;
-        public static final int img_play_status03=0x7f020010;
-        public static final int img_play_status04=0x7f020011;
-        public static final int img_play_status05=0x7f020012;
-        public static final int img_play_status06=0x7f020013;
-        public static final int img_play_status07=0x7f020014;
-        public static final int img_play_status08=0x7f020015;
-        public static final int img_play_status09=0x7f020016;
-        public static final int txt_chaper_description_background=0x7f020017;
-        public static final int whith=0x7f020019;
-        public static final int xv=0x7f020018;
+        public static final int bg_courseinfo=0x7f020005;
+        public static final int bg_pattern=0x7f020006;
+        public static final int course_default1=0x7f020007;
+        public static final int course_default2=0x7f020008;
+        public static final int course_default3=0x7f020009;
+        public static final int course_default4=0x7f02000a;
+        public static final int courses_play_status=0x7f02000b;
+        public static final int gplaypattern=0x7f02000c;
+        public static final int ic_action_search=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int img_play_status01=0x7f02000f;
+        public static final int img_play_status02=0x7f020010;
+        public static final int img_play_status03=0x7f020011;
+        public static final int img_play_status04=0x7f020012;
+        public static final int img_play_status05=0x7f020013;
+        public static final int img_play_status06=0x7f020014;
+        public static final int img_play_status07=0x7f020015;
+        public static final int img_play_status08=0x7f020016;
+        public static final int img_play_status09=0x7f020017;
+        public static final int overscroll_edge=0x7f020018;
+        public static final int overscroll_glow=0x7f020019;
+        public static final int txt_chaper_description_background=0x7f02001a;
+        public static final int whith=0x7f02001c;
+        public static final int xv=0x7f02001b;
     }
     public static final class id {
-        public static final int bt_test=0x7f080001;
-        public static final int img_course=0x7f080009;
-        public static final int img_course_info_background=0x7f08000b;
-        public static final int img_course_new=0x7f080011;
-        public static final int img_play_status=0x7f08000f;
-        public static final int iv_avater=0x7f080002;
-        public static final int layout_course1=0x7f080005;
-        public static final int layout_course2=0x7f080006;
-        public static final int layout_course3=0x7f080007;
-        public static final int layout_course4=0x7f080008;
-        public static final int layout_course_info=0x7f08000a;
-        public static final int layout_courses=0x7f080004;
-        public static final int layout_play_status=0x7f08000e;
-        public static final int rl_content=0x7f080003;
-        public static final int rl_playstatus=0x7f080000;
-        public static final int txt_course_info=0x7f08000c;
-        public static final int txt_play_status=0x7f080010;
-        public static final int txt_total_music=0x7f08000d;
+        public static final int bt_test=0x7f090001;
+        public static final int img_course=0x7f09000a;
+        public static final int img_course_info_background=0x7f09000c;
+        public static final int img_course_new=0x7f090012;
+        public static final int img_play_status=0x7f090010;
+        public static final int iv_avater=0x7f090002;
+        public static final int layout_course1=0x7f090006;
+        public static final int layout_course2=0x7f090007;
+        public static final int layout_course3=0x7f090008;
+        public static final int layout_course4=0x7f090009;
+        public static final int layout_course_info=0x7f09000b;
+        public static final int layout_courses=0x7f090005;
+        public static final int layout_play_status=0x7f09000f;
+        public static final int listview=0x7f090004;
+        public static final int rl_content=0x7f090003;
+        public static final int rl_playstatus=0x7f090000;
+        public static final int txt_course_info=0x7f09000d;
+        public static final int txt_play_status=0x7f090011;
+        public static final int txt_total_music=0x7f09000e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fragment_courses=0x7f030001;
-        public static final int layout_course_info=0x7f030002;
+        public static final int edge_listview=0x7f030001;
+        public static final int fragment_courses=0x7f030002;
+        public static final int layout_course_info=0x7f030003;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060001;
-        public static final int menu_settings=0x7f060002;
-        public static final int title_activity_main=0x7f060003;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070001;
+        public static final int menu_settings=0x7f070002;
+        public static final int title_activity_main=0x7f070003;
     }
     public static final class style {
-        public static final int AppTheme=0x7f070000;
+        public static final int AppTheme=0x7f080000;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a EdgeEffectView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #EdgeEffectView_edgeeffect_color com.zhouzhou.utillib:edgeeffect_color}</code></td><td></td></tr>
+           </table>
+           @see #EdgeEffectView_edgeeffect_color
+         */
+        public static final int[] EdgeEffectView = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.zhouzhou.utillib.R.attr#edgeeffect_color}
+          attribute's value can be found in the {@link #EdgeEffectView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:edgeeffect_color
+        */
+        public static final int EdgeEffectView_edgeeffect_color = 0;
+    };
 }

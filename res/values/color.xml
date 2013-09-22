@@ -12,4 +12,6 @@
     <color name="shadow_color">#ff9f9f9f</color>
 
     <drawable name="whith">#FFFFFF</drawable>
+    
+    <color name="default_edgeeffect_color">#FF33B5E5</color>
 </resources>
